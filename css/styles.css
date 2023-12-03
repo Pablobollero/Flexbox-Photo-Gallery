@@ -1,13 +1,16 @@
+/* Global settings: Applies box-sizing property to all elements for consistent rendering */
 * {
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
     margin: 0;
     font-family: sans-serif;
     background: #f5f6f7;
 }
 
+/* Header styling */
 .header {
     text-align: center;
     text-transform: uppercase;
@@ -17,6 +20,7 @@ body {
     border-bottom: 4px solid #fdb347;
 }
 
+/* Gallery container styling */
 .gallery {
     display: flex;
     flex-direction: row;
@@ -29,6 +33,7 @@ body {
     padding: 20px 10px;
 }
 
+/* Img styling */
 .gallery img {
     width: 100%;
     max-width: 350px;
@@ -37,6 +42,7 @@ body {
     border-radius: 10px;
 }
 
+/* After pseudo-element for the gallery: Adds an empty content block with specific width */
 .gallery::after {
     content: "";
     width: 350px;
